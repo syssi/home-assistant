@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
         uses: actions/setup-python@v2.2.1
@@ -71,7 +71,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -116,7 +116,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -161,7 +161,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -209,7 +209,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Register hadolint problem matcher
         run: |
           echo "::add-matcher::.github/workflows/matchers/hadolint.json"
@@ -228,7 +228,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -276,7 +276,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -324,7 +324,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -369,7 +369,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -417,7 +417,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -463,7 +463,7 @@ jobs:
   #   needs: prepare-base
   #   steps:
   #     - name: Check out code from GitHub
-  #       uses: actions/checkout@v2
+  #       uses: actions/checkout@v2.3.4
   #     - name: Run ShellCheck
   #       uses: ludeeus/action-shellcheck@0.3.0
 
@@ -473,7 +473,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -525,7 +525,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
@@ -552,7 +552,7 @@ jobs:
     needs: prepare-base
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -588,7 +588,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
@@ -627,7 +627,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
@@ -661,7 +661,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
@@ -697,7 +697,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
@@ -757,7 +757,7 @@ jobs:
     container: homeassistant/ci-azure:${{ matrix.python-version }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Restore full Python ${{ matrix.python-version }} virtual environment
         id: cache-venv
         uses: actions/cache@v2
